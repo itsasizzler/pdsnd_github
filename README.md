@@ -2,11 +2,10 @@
 03/21/2019
 
 ### Project Title
-Szymon Bikeshare Data
+Szymon Bikeshare Data - Python Udacity Project
 
 ### Description
-Python script which ingests bikeshare data from Chicago, New York, and Washington 
-and produces data summaries based on the desired month or weekday. 
+Python script which ingests bikeshare data from Chicago, New York, and Washington and produces data summaries based on the desired month or weekday.
 
 ### Files used
 bikeshare.py
@@ -18,3 +17,5 @@ readme.txt
 ### Credits
 https://github.com/udacity/pdsnd_github
 
+### Version
+1.3

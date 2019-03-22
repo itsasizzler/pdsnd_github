@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#City data derived from online resources including city APIs.
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -165,8 +166,8 @@ def user_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
-    #Presents raw dataframe data five rows at a time to the user of the script 
-def raw_data(df): 
+    #Presents raw dataframe data five rows at a time to the user of the script
+def raw_data(df):
     more_data = input('Would you like to see the raw data? Please enter yes or no:').lower()
     if more_data in ('yes'):
         i = 0
@@ -179,21 +180,21 @@ def raw_data(df):
                 i += 5
                 even_more_data = input('Would you like to see five more rows of raw data? Please enter yes or no:').lower()
                 if even_more_data not in ('yes'):
-                    break       
-  
+                    break
+
 def main():
-    
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        
-        time_stats(df) 
+
+        time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-            
+
         raw_data(df)
-                           
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break

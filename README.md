@@ -19,4 +19,4 @@ readme.txt
 https://github.com/udacity/pdsnd_github
 
 ### Version
-1.1
+1.2

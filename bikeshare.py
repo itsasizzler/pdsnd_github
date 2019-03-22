@@ -2,7 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
+<<<<<<< HEAD
 ## Source data for the script identified below. Currently being gitignored.
+=======
+#City data derived from online resources including city APIs.
+>>>>>>> refactoring
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
